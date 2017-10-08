@@ -22,7 +22,7 @@ module.exports.create = (event, context, callback) => {
         },
     };
 
-    // write the todo to the database
+    // write the user to the database
     dynamoDb.put(params, (error) => {
         // handle potential errors
         if (error) {
