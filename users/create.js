@@ -12,7 +12,7 @@ module.exports.create = (event, context, callback) => {
         TableName: process.env.DYNAMODB_TABLE,
         Item: {
             id: uuid.v1(),
-            text: data.text,
+            name: data.name,
             email: data.email,
             password: data.password,
             responder: data.responder,
